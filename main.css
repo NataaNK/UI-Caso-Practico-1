@@ -62,7 +62,9 @@
 body{
     margin: 0;
     padding-top: 2%;
-    background-image: url('assets/fondo_5.png');
+    background-image: url('assets/background.png');
+    background-repeat: repeat;
+    background-size: 15%;
 }
 
 h1{
