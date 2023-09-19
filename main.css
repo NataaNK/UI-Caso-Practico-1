@@ -64,7 +64,7 @@ body{
     padding-top: 2%;
     background-image: url('assets/background.png');
     background-repeat: repeat;
-    background-size: 15%;
+    background-size: max(15%, 150px);
 }
 
 h1{
