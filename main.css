@@ -79,6 +79,34 @@ a{
     text-align: center;
 }
 
+.galeria {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria:hover {
+  border: 1px solid #e2d4c7;
+}
+
+.galeria img {
+    max-width: 100%;
+    max-height: fit-content;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.desc {
+    padding: 2px;
+    text-align: center;
+    font-family: carlmarx, sans-serif;
+    font-size: min(150%,2.5vw);
+    font-weight: 400;
+  }
+  
+
 
 /*---------------PÁGINA 1----------------*/
 #page1{
@@ -106,7 +134,7 @@ a{
 
 #logo{
     position: absolute;
-    top: 3%;
+    top: 5%;
     max-width: 20%;
 }
 
@@ -164,18 +192,9 @@ a{
 
 /*PAGINA 2 - COLUMNA DERECHA*/
 #col_der2{
-    display: inline-block;
     width: 33%;
+    height: auto;
     border-radius: 20px;
-    overflow: hidden;
+    display: grid;
 }
 
-#col_der2 img {
-    max-width: 100%;
-    max-height: fit-content;
-    height: auto;
-    display: block;
-    border-radius: 20px;
-    margin-bottom: 3px;
-    margin-top: 3px;
-}
