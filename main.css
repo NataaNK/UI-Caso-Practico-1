@@ -10,7 +10,26 @@
 
 }
 
-@media only screen and (max-width: 768px) {
+@media screen{
+    body{   
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    #page1{
+        max-height: 50vh;
+    }
+
+    #page2{
+        max-height: 80vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{    
+        padding-right: 10%;
+        padding-left: 10%;
+    }
     
     #page1{
         max-height: 50vh;
@@ -22,7 +41,12 @@
   
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+
+    body{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
    
     #page1{
         max-height: 40vh;
@@ -33,13 +57,14 @@
     }
 }
 
+
+
 body{
     margin: 0;
-    padding-right: 10%;
-    padding-left: 10%;
     padding-top: 2%;
-    background-image: url('assets/fondo_5.png');
-    
+    background-image: url('assets/background.png');
+    background-repeat: repeat;
+    background-size: max(15%, 150px);
 }
 
 h1{
