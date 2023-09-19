@@ -10,6 +10,29 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+    
+    #page1{
+        max-height: 50vh;
+    }
+
+    #page2{
+        max-height: 80vh;
+    }
+  
+}
+
+@media only screen and (max-width: 600px) {
+   
+    #page1{
+        max-height: 40vh;
+    }
+
+    #page2{
+        max-height: 80vh;
+    }
+}
+
 body{
     margin: 0;
     padding-right: 10%;
@@ -18,6 +41,7 @@ body{
     background-image: url('assets/fondo_5.png');
     
 }
+
 h1{
     font-size: min(350%,6vw);
     background-color: #B4B4B3;
@@ -39,6 +63,7 @@ h3{
     margin: 0;
     padding: 0;
 }
+
 p{
     font-family: carlmarx, sans-serif;
     font-size: min(150%,3vw);
@@ -47,6 +72,7 @@ p{
     margin: 0 30px 10px;
     text-align: justify;
 }
+
 a{
     color: #ce5b18;
     font-size: min(350%,6vw);
@@ -125,7 +151,7 @@ a{
 }
 
 
-/*Columna izquierda*/
+/*PAGINA 2 - COLUMNA IZQUIERDA*/
 #col_izq2{
     border-radius: 20px;
     margin-right: 6px;
@@ -136,7 +162,7 @@ a{
 }
 
 
-/*Columna derecha*/
+/*PAGINA 2 - COLUMNA DERECHA*/
 #col_der2{
     display: inline-block;
     width: 33%;
@@ -153,4 +179,3 @@ a{
     margin-bottom: 3px;
     margin-top: 3px;
 }
-/* #TODO hacer los  breackpoints que se pide en el enunciado para adaptarse bien a pantallas pequeñas*/
