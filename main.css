@@ -161,6 +161,11 @@ a{
     justify-content: center;
     align-items: center;   
     font-family: 'flegrei'; 
+    transition: transform 0.3s ease;
+}
+.caja:hover{
+    border: 6px solid #EBE4D1;
+    transform: scale(1.05);
 }
 
 /*--------------PAGINA-2-3-y-4---------------*/
@@ -283,3 +288,15 @@ footer{
   .icon img {
     height: 100%;
   }
+
+footer a{
+color: #ce5b18;
+font-size: min(250%,3.5vw);
+text-align: center;
+text-decoration: none;
+transition: transform 0.3s ease;
+}
+
+footer a:hover{
+    transform: scale(1.1);
+}
