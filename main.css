@@ -48,7 +48,7 @@ html{
     }
    
     #page1{
-        max-height: 40vh;
+        max-height: 88vh;
     }
 
     #page{
@@ -65,6 +65,7 @@ body{
     background-image: url('assets/background.png');
     background-repeat: repeat;
     background-size: max(15%, 150px);
+    padding-bottom: 10vh;
 }
 
 h1{
@@ -109,7 +110,7 @@ a{
 /*---------------PÁGINA 1----------------*/
 #page1{
     max-width: 100%;
-    height: 95vh;
+    height: 85vh;
     background-color: #EBE4D1;
     display: flex;
     overflow: hidden;
@@ -170,6 +171,7 @@ a{
 
 /*--------------PAGINA-2-3-y-4---------------*/
 .page{
+    max-height: 85vh;
     height: fit-content;
     width: auto;
     background-color: #EBE4D1;
@@ -263,7 +265,7 @@ footer{
 #footer_container{
     position: fixed;
     width: 100%;
-    height: 8%;
+    height: 8vh;
     left: 0;
     bottom: -1px;
     display: flex;
