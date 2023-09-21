@@ -160,7 +160,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;   
-    font-family: 'flegrei';     
+    font-family: 'flegrei'; 
 }
 
 /*--------------PAGINA-2-3-y-4---------------*/
@@ -169,7 +169,6 @@ a{
     width: auto;
     background-color: #EBE4D1;
     display: flex;
-    overflow: hidden;
     border-radius: 20px;
     padding: 3px;
     margin: 6px;
@@ -189,7 +188,6 @@ a{
 
 .col_imagenes{
     width: 33%;
-
     border-radius: 20px;
     margin: 3px;
     
@@ -205,10 +203,14 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s ease;
   }
   
 .img_con_desc:hover {
-    border: 1px solid #e2d4c7;
+    z-index: 1;
+    transform: scale(1.1);
+    background-color: #EBE4D1;
+    border-radius: 20px;
 }
 
 .desc {
@@ -220,7 +222,7 @@ a{
 }
     
 .image-wraper{
-    max-height: 33.3333333vh;
+    max-height: 33.3333vh;
     width: 100%;
     overflow: hidden;
     border-radius: 20px;
@@ -251,7 +253,6 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    
 }
   
 #footer_container{
