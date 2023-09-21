@@ -248,7 +248,7 @@ footer{
     border-top-right-radius: 20px ;
     padding: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     
@@ -265,17 +265,20 @@ footer{
     justify-content: center;
 }
 
-.icon{
+.icon {
+    margin-left: 5px;
+    margin-right: 5px;
     height: 100%;
     width: fit-content;
-}
-
-.icon img{
-    height: 100%;
-}
-
-.icon:hover {
-    background-color: #EBE4D1;
     border-radius: 50%;
-    height: 102%;
-}
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .icon:hover {
+    background-color: #ce5b18;
+    transform: scale(1.2);
+  }
+  
+  .icon img {
+    height: 100%;
+  }
