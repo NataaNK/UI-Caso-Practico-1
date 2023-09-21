@@ -2,6 +2,10 @@
 @import url("https://use.typekit.net/wkh3vjl.css");
 @import url("https://use.typekit.net/jot6tbh.css");
 
+html{
+    scroll-behavior: smooth;
+}
+
 @media screen{
     body{   
         padding-right: 10%;
