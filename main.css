@@ -100,6 +100,7 @@ a{
     text-align: center;
     text-decoration: none;
 }
+
 #gmap{
     height: 66%;
     width: 100%;
@@ -165,8 +166,7 @@ a{
     transition: transform 0.3s ease;
 }
 .caja:hover{
-    border: 6px solid #EBE4D1;
-    transform: scale(1.05);
+    font-style: oblique;  
 }
 
 /*--------------PAGINA-2-3-y-4---------------*/
@@ -196,8 +196,7 @@ a{
 .col_imagenes{
     width: 33%;
     border-radius: 20px;
-    margin: 3px;
-    
+    margin: 3px; 
 }
 
 .galeria{
@@ -231,6 +230,7 @@ a{
 .image-wraper{
     max-height: 33.3333vh;
     width: 100%;
+    height: 100%;
     overflow: hidden;
     border-radius: 20px;
     display: flex;
@@ -244,6 +244,17 @@ a{
 }
 
 /*----------PIE DE PÁGINA-------------*/
+  
+#footer_container{
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    left: 0;
+    bottom: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 footer{
     width: 98%;
@@ -258,47 +269,57 @@ footer{
     padding: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
-  
-#footer_container{
-    position: fixed;
-    width: 100%;
-    height: 8vh;
-    left: 0;
-    bottom: -1px;
+
+#icons_container{
+    width: auto;
+    height: 70%;
+    float: left;
     display: flex;
+    justify-content: left;
     align-items: center;
-    justify-content: center;
 }
 
 .icon {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
     height: 100%;
     width: fit-content;
     border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
-  .icon:hover {
+.icon:hover {
     background-color: #ce5b18;
     transform: scale(1.2);
   }
   
-  .icon img {
+.icon img {
     height: 100%;
   }
 
-footer a{
-color: #ce5b18;
-font-size: min(250%,3.5vw);
-text-align: center;
-text-decoration: none;
-transition: transform 0.3s ease;
+#info_container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 6px;
+    margin-bottom: 8px;
 }
 
-footer a:hover{
-    transform: scale(1.1);
+#info_container a{
+    float: right;
+    color: #ce5b18;
+    font-size: min(250%,2.5vw);
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
 }
+
+#info_container a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+
+
+
