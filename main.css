@@ -18,9 +18,10 @@ html{
     }
 
     #page{
-        height: min(80vh, fit-content);
+        height: fit-content;
         max-height: fit-content;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -34,10 +35,13 @@ html{
     }
 
     #page{
-        height: min(80vh, fit-content);
+        height: fit-content;
         max-height: fit-content;
     }
-  
+
+    #footer_container{
+        height: 10vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -52,8 +56,12 @@ html{
     }
 
     #page{
-        height: min(80vh, fit-content);
+        height: fit-content;
         max-height: fit-content;
+    }
+
+    #footer_container{
+        height: 11vh;
     }
 }
 
@@ -79,7 +87,7 @@ h1{
     text-align: center;
     margin: 0;
     margin-bottom: 6px;
-    padding: 3%;
+    padding: 22%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -93,7 +101,7 @@ h2{
     font-family: carlmarx;
     color: #ce5b18;
     text-align: center;
-    margin: 0;
+    margin: 1;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -103,7 +111,7 @@ h2{
 
 p{
     font-family: carlmarx, sans-serif;
-    font-size: min(100%,3vw);
+    font-size: min(175%, 2.5vw);
     font-weight: 400;
     font-style: normal;
     text-align: justify;
@@ -116,11 +124,23 @@ a{
     text-decoration: none;
 }
 
-#gmap{
-    height: 66%;
+.gmap{
     width: 100%;
+    height: 100%;
     border-radius: 20px;
-    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.gmap iframe{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /*---------------PÁGINA 1----------------*/
@@ -150,7 +170,7 @@ a{
 #logo{
     position: absolute;
     top: 5%;
-    max-width: 20%;
+    max-width: 18%;
 }
 
 #video{
@@ -195,9 +215,9 @@ a{
 
 /*--------------PAGINA-2-3-y-4---------------*/
 .page{
-    max-height: 85vh;
+    max-height: fit-content;
     height: fit-content;
-    width: auto;
+    width: 100%;
     background-color: #EBE4D1;
     display: flex;
     border-radius: 20px;
@@ -215,7 +235,7 @@ a{
 
 .col_texto{
     width: 66.6%;
-    height: auto;
+    height: min(100%, fit-content);
     border-radius: 20px;
     margin: 3px;
     padding: 5%;
@@ -225,18 +245,20 @@ a{
 }
 
 .col_imagenes{
+    height: 100%;
     width: 33%;
     border-radius: 20px;
     margin: 3px; 
 }
 
 .galeria{
-    height: 88%;
+    width: 100%;
+    height: 100%;
 }
 
 .img_con_desc {
     width: 100%;
-    height: 33%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,7 +281,6 @@ a{
 }
     
 .image-wraper{
-    max-height: 33.3333vh;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -267,16 +288,25 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
+}
+.image-wraper a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-wraper img {
-    min-width: 150px;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 #page3 .col_texto{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 #page3 p{
@@ -289,7 +319,7 @@ a{
 #footer_container{
     position: fixed;
     width: 100%;
-    height: 5vh;
+    height: 8vh;
     left: 0;
     bottom: -1px;
     display: flex;
