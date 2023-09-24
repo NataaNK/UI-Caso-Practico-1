@@ -21,7 +21,6 @@ html{
         height: fit-content;
         max-height: fit-content;
     }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -38,8 +37,8 @@ html{
         height: fit-content;
         max-height: fit-content;
     }
-
-    #footer_container{
+  
+#footer_container{
         height: 10vh;
     }
 }
@@ -87,7 +86,7 @@ h1{
     text-align: center;
     margin: 0;
     margin-bottom: 6px;
-    padding: 22%;
+    padding: 3%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -125,8 +124,8 @@ a{
 }
 
 .gmap{
-    width: 100%;
-    height: 100%;
+        width: 100%;
+height: 100%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -235,7 +234,7 @@ a{
 
 .col_texto{
     width: 66.6%;
-    height: min(100%, fit-content);
+    height: auto;
     border-radius: 20px;
     margin: 3px;
     padding: 5%;
@@ -252,13 +251,12 @@ a{
 }
 
 .galeria{
-    width: 100%;
-    height: 100%;
+    height: 88%;
 }
 
 .img_con_desc {
     width: 100%;
-    height: 100%;
+    height: 33%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,6 +279,7 @@ a{
 }
     
 .image-wraper{
+    max-height: 33.3333vh;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -288,7 +287,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: cover;
+object-fit: cover;
 }
 .image-wraper a {
     width: 100%;
@@ -299,9 +298,8 @@ a{
 }
 
 .image-wraper img {
-    height: 100%;
+    min-width: 150px;
     width: 100%;
-    object-fit: cover;
 }
 
 #page3 .col_texto{
