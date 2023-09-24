@@ -123,9 +123,17 @@ a{
     text-decoration: none;
 }
 
+li {
+    font-family: carlmarx, sans-serif;
+    font-size: min(175%,2.5vw);
+    font-style: normal;
+    text-align: left;
+    list-style-type: none;
+}
+
 .gmap{
-        width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -302,15 +310,49 @@ object-fit: cover;
     width: 100%;
 }
 
-#page3 .col_texto{
+#menu {
+    padding: 2%;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    column-gap: 0px;
+    row-gap: 0px;
 }
 
-#page3 p{
-    margin: 8px;
+#menu ul{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
     text-align: center;
 }
+
+#menu #ENTRANTES{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#menu #PRINCIPALES{
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#menu #ESPECIALIDADES{
+    margin-top: 30px;
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+}
+
+#menu #POSTRES{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#menu #BEBIDAS{
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+
+
 
 /*----------PIE DE PÁGINA-------------*/
   
