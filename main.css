@@ -152,7 +152,7 @@ li {
 
 /*---------------PÁGINA 1----------------*/
 #page1{
-    max-width: 100%;
+    width: 100%;
     height: 85vh;
     background-color: #EBE4D1;
     display: flex;
@@ -222,7 +222,6 @@ li {
 
 /*--------------PAGINA-2-3-y-4---------------*/
 .page{
-    max-height: fit-content;
     height: fit-content;
     width: 100%;
     background-color: #EBE4D1;
