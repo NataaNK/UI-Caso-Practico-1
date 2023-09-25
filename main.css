@@ -156,10 +156,9 @@ li {
     height: 85vh;
     background-color: #EBE4D1;
     display: flex;
-    overflow: hidden;
     border-radius: 20px;
-    padding: 6px;
-    margin: 3px;
+    padding: 3px;
+    margin: 6px;
 }
 
 /*PÁGINA 1 - COLUMNA IZQUIERDA*/
@@ -170,8 +169,8 @@ li {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin-right: 6px;
     object-fit: scale-down;
+    margin: 3px;
 }
 
 #logo{
@@ -189,14 +188,15 @@ li {
 
 /*PAGINA 1 - COLUMNA DERECHA*/
 #col_der1{
-    height: 100%;
     width: 100%;
+    padding-bottom: 6px;
+    padding-right: 6px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 33;
+    grid-template-rows: 33% 33% 33%;
     row-gap: 6px;
     column-gap: 6px;
-    margin-right: 6px;
+    margin: 3px;
 }
 
 #col_der1 a{
