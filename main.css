@@ -261,6 +261,7 @@ li {
     transform: scale(1.1);
     background-color: #EBE4D1;
     border-radius: 20px;
+
 }
 
 .desc {
@@ -362,6 +363,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 7;
 }
 
 footer{
@@ -379,6 +381,7 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 #icons_container{
     width: auto;
