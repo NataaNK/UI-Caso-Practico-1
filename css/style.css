@@ -69,7 +69,7 @@ html{
 body{
     margin: 0;
     padding-top: 2%;
-    background-image: url('assets/background.png');
+    background-image: url('../media/img/background.png');
     background-repeat: repeat;
     background-size: max(15%, 150px);
     padding-bottom: 10vh;
