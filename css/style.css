@@ -67,12 +67,14 @@ html{
 
 
 body{
-    margin: 0;
     padding-top: 2%;
     background-image: url('../media/img/background.png');
     background-repeat: repeat;
     background-size: max(15%, 150px);
     padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1{
@@ -301,6 +303,9 @@ li {
     height: 100%;
     overflow: hidden;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gmap iframe{
